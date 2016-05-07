@@ -1,6 +1,6 @@
-# AWS - Highly available: Bastion SSH
+# AWS - Highly available Bastion SSH Server
 
-A Cloudformation template for a highly available SSH bastion server.
+A Cloudformation template for a highly available bastion SSH server.
 
 
 ## Scenario
