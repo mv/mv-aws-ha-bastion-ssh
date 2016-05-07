@@ -2,10 +2,11 @@
 ---
 name: bastion-example
 elastic_ip: 54.54.54.55
+subnet_id: subnet-01235
+ssh_key_name: nat.pem
 security_group: bastion-ssh
-subnet: subnet-01235
 logs:
   enable: yes
-  bucket: my-bucket-log
+  bucket_path: my-bucket-log
 ---
 

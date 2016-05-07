@@ -37,11 +37,12 @@ For example:
   ---
   name: bastion-ssh-01
   elastic_ip: 54.54.54.54
+  subnet_id: subnet-abc54
+  ssh_key_name: nat.pem
   security_group: bastion-ssh
-  subnet: subnet-01234
   logs:
     enable: yes
-    bucket: my-bucket-log
+    bucket_path: my-bucket-log
   ---
 ```
 and
@@ -51,11 +52,12 @@ and
   ---
   name: bastion-ssh-02
   elastic_ip: 54.54.54.55
+  subnet_id: subnet-abc55
+  ssh_key_name: nat.pem
   security_group: bastion-ssh
-  subnet: subnet-01235
   logs:
     enable: yes
-    bucket: my-bucket-log
+    bucket_path: my-bucket-log
   ---
 ```
 
