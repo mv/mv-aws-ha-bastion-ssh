@@ -1,0 +1,11 @@
+# example.yml
+---
+name: bastion-example
+elastic_ip: 54.54.54.55
+security_group: bastion-ssh
+subnet: subnet-01235
+logs:
+  enable: yes
+  bucket: my-bucket-log
+---
+
