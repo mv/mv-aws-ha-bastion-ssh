@@ -86,11 +86,10 @@ task :"latest-amis" do
     aws ec2 describe-images \
       --owners amazon                           \
       --filters                                 \
-          "Name=virtualization-type,Values=hvm" \
           "Name=architecture,Values=x86_64"     \
           "Name=root-device-type,Values=ebs"    \
       --query 'Images[?Platform != `windows`].[ImageId,Name]'  \
-      --output text | sort -k 2 | grep 'amzn-ami'              \
+      --output text | grep 'amzn-ami' | sort -k 2
   }
 end
 
